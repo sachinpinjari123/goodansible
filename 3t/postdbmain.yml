@@ -1,0 +1,6 @@
+- name: setup postgres
+  hosts: appdbs
+  become: yes
+  roles:
+  - name: postdb
+

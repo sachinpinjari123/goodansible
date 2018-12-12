@@ -1,0 +1,7 @@
+---
+# handlers file for postdb
+- name: start postgres
+  service:
+    name: postgresql.service
+    state: started
+ 

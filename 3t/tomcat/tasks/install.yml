@@ -1,0 +1,9 @@
+  - name: install tomcat
+    package:
+      name: tomcat
+      state: latest
+  - name: enable tomcat at boot
+    service:
+      name: tomcat
+      enabled: yes
+

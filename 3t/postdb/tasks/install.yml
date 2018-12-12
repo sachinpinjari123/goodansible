@@ -1,0 +1,7 @@
+- name: install progress
+  command: "yum install -y postgresql-server"
+- name: enable postgres at boot
+  service:
+    name: postgresql
+    enabled: yes
+  notify: start postgres

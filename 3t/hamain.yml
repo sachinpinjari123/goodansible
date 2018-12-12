@@ -1,0 +1,5 @@
+- name: setup haproxy
+  hosts: frontends
+  become: yes
+  roles:
+  - name: haproxy
